@@ -18,10 +18,11 @@ public:
 
 };
 
-
-void create(Video *arr, int n);
-void read(Video** arr, int* n);
-void search(Video* arr, int n);
-void add(Video* arr,int n);
-void edit(Video* arr, int n);
-void dele(Video** arr, int* n);
+namespace dat {
+	void create(Video* arr, int n);
+	void read(Video** arr, int* n);
+	void search(Video* arr, int n);
+	void add(Video* arr, int n);
+	void edit(Video* arr, int n);
+	void dele(Video** arr, int* n);
+}
