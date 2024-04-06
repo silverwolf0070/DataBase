@@ -12,6 +12,9 @@ std::istream& operator >> (std::istream& in, Video& r) {
 		for (int i = 0; i < len; i++) {
 			r.name[i] = str[i];
 		}
+		for (int i = len; i < 40; i++) {
+			r.name[i] = {};
+		}
 	}
 	else
 		for (int i = 0; i < 40; i++) {
